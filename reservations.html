@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haukai Restaurant - Reservations</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../images/reservations.jpg" alt="Haukai Restaurant Reservations" class="hero-desktop">
+        <img src="../images/reservations-mobile.jpg" alt="Haukai Restaurant Reservations" class="hero-mobile">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="hours.html">Hours</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="reservation-form">
+            <h1>Make a Reservation</h1>
+            <form action="#" method="POST">
+                <!-- Name Field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required pattern="[A-Za-z\s'-]+" title="Name can only contain letters, spaces, apostrophes, and hyphens.">
+                
+                <!-- Party Size Field -->
+                <label for="party-size">Party Size:</label>
+                <input type="number" id="party-size" name="party-size" required min="1" max="20">
+                
+                <!-- Date Field with Calendar Pop-up -->
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <!-- Time Dropdown Field with 15-Minute Intervals -->
+                <label for="time">Time:</label>
+                <select id="time" name="time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="17:00">17:00</option>
+                    <option value="17:15">17:15</option>
+                    <option value="17:30">17:30</option>
+                    <option value="17:45">17:45</option>
+                    <option value="18:00">18:00</option>
+                    <option value="18:15">18:15</option>
+                    <option value="18:30">18:30</option>
+                    <option value="18:45">18:45</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:15">19:15</option>
+                    <option value="19:30">19:30</option>
+                    <option value="19:45">19:45</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:15">20:15</option>
+                    <option value="20:30">20:30</option>
+                    <option value="20:45">20:45</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:15">21:15</option>
+                    <option value="21:30">21:30</option>
+                    <option value="21:45">21:45</option>
+                    <option value="22:00">22:00</option>
+                </select>
+                
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Haukai Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
